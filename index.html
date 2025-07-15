@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malla Curricular de Medicina UCM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Malla Curricular de Medicina <br> Universidad Católica del Maule</h1>
+        <p>Haz clic en los cursos para marcarlos como aprobados.</p>
+        <p class="legend">Cursos aprobados: <span class="approved-legend"></span></p>
+        <p class="legend">Cursos con prerrequisitos pendientes: <span class="prereq-pending-legend"></span></p>
+        <p class="legend">Puedes cursar (prerrequisitos cumplidos): <span class="can-take-legend"></span></p>
+    </header>
+
+    <main id="malla-container">
+        <section class="semester" id="sem-1">
+            <h2>Semestre 1</h2>
+            <div class="course" data-id="mdn111" data-name="Introducción a la profesión médica" data-prerequisites="">Introducción a la profesión médica (MDN-111)</div>
+            <div class="course" data-id="introprog" data-name="Introducción a la Programación" data-prerequisites="">Introducción a la Programación (MDN-115)</div>
+            <div class="course" data-id="fisica101" data-name="Física General" data-prerequisites="">Física General (MDN-112)</div>
+            <div class="course" data-id="mdn113" data-name="Química General y Orgánica" data-prerequisites="">Química General y Orgánica (MDN-113)</div>
+            <div class="course" data-id="mdn114" data-name="Metodología de la Investigación I" data-prerequisites="">Metodología de la Investigación I (MDN-114)</div>
+            <div class="course" data-id="mdn115" data-name="Taller de Aprendizaje Académico" data-prerequisites="">Taller de Aprendizaje Académico (MDN-115)</div>
+            <div class="course" data-id="ifg100" data-name="Inglés I" data-prerequisites="">Inglés I (IFG-100)</div>
+        </section>
+
+        <section class="semester" id="sem-2">
+            <h2>Semestre 2</h2>
+            <div class="course" data-id="mdn121" data-name="Anatomía y Embriología I" data-prerequisites="">Anatomía y Embriología I (MDN-121)</div>
+            <div class="course" data-id="mdn122" data-name="Bases Biológicas de la Medicina II" data-prerequisites="mdn112">Bases Biológicas de la Medicina II (MDN-122)</div>
+            <div class="course" data-id="mdn123" data-name="Información y Comunicación Médica" data-prerequisites="">Información y Comunicación Médica (MDN-123)</div>
+            <div class="course" data-id="mdn124" data-name="Metodología de la Investigación II" data-prerequisites="mdn114">Metodología de la Investigación II (MDN-124)</div>
+            <div class="course" data-id="mdn125" data-name="Taller de Salud Comunitaria" data-prerequisites="">Taller de Salud Comunitaria (MDN-125)</div>
+            <div class="course" data-id="ifg200" data-name="Inglés II" data-prerequisites="ifg100">Inglés II (IFG-200)</div>
+        </section>
+
+        <section class="semester" id="sem-3">
+            <h2>Semestre 3</h2>
+            <div class="course" data-id="mdn211" data-name="Anatomía y Embriología II" data-prerequisites="mdn121">Anatomía y Embriología II (MDN-211)</div>
+            <div class="course" data-id="mdn212" data-name="Neuroanatomía" data-prerequisites="mdn121">Neuroanatomía (MDN-212)</div>
+            <div class="course" data-id="mdn213" data-name="Fisiología Médica General" data-prerequisites="mdn122,mdn121">Fisiología Médica General (MDN-213)</div>
+            <div class="course" data-id="mdn214" data-name="Epidemiología" data-prerequisites="mdn124">Epidemiología (MDN-214)</div>
+            <div class="course" data-id="mdn215" data-name="Taller de Procedimientos Clínicos" data-prerequisites="mdn121">Taller de Procedimientos Clínicos (MDN-215)</div>
+            <div class="course" data-id="ifg300" data-name="Inglés III" data-prerequisites="ifg200">Inglés III (IFG-300)</div>
+        </section>
+
+        <section class="semester" id="sem-4">
+            <h2>Semestre 4</h2>
+            <div class="course" data-id="mdn221" data-name="Histología Médica" data-prerequisites="mdn211,mdn212">Histología Médica (MDN-221)</div>
+            <div class="course" data-id="mdn222" data-name="Bases Neurales de la Adaptación Humana" data-prerequisites="mdn212">Bases Neurales de la Adaptación Humana (MDN-222)</div>
+            <div class="course" data-id="mdn223" data-name="Fisiología Médica de Sistemas" data-prerequisites="mdn213">Fisiología Médica de Sistemas (MDN-223)</div>
+            <div class="course" data-id="mdn224" data-name="Patología y Fisiopatología General" data-prerequisites="mdn213">Patología y Fisiopatología General (MDN-224)</div>
+            <div class="course" data-id="mdn225" data-name="Hito Evaluativo de Integración Preclínica" data-prerequisites="mdn211,mdn212">Hito Evaluativo de Integración Preclínica (MDN-225)</div>
+        </section>
+
+        <section class="semester" id="sem-5">
+            <h2>Semestre 5</h2>
+            <div class="course" data-id="mdn311" data-name="Semiología" data-prerequisites="mdn225">Semiología (MDN-311)</div>
+            <div class="course" data-id="mdn312" data-name="Microbiología I" data-prerequisites="mdn225">Microbiología I (MDN-312)</div>
+            <div class="course" data-id="mdn313" data-name="Bases Farmacológicas de la Medicina I" data-prerequisites="mdn225">Bases Farmacológicas de la Medicina I (MDN-313)</div>
+            <div class="course" data-id="mdn314" data-name="Patología y Fisiopatología de Sistemas" data-prerequisites="mdn225">Patología y Fisiopatología de Sistemas (MDN-314)</div>
+        </section>
+
+        <section class="semester" id="sem-6">
+            <h2>Semestre 6</h2>
+            <div class="course" data-id="mdn321" data-name="Clínicas Integradas I" data-prerequisites="mdn311,mdn312,mdn313,mdn314">Clínicas Integradas I (MDN-321)</div>
+            <div class="course" data-id="mdn322" data-name="Microbiología II" data-prerequisites="mdn312">Microbiología II (MDN-322)</div>
+            <div class="course" data-id="mdn323" data-name="Bases Farmacológicas de la Medicina II" data-prerequisites="mdn313">Bases Farmacológicas de la Medicina II (MDN-323)</div>
+            <div class="course" data-id="mdn324" data-name="Taller Clínico Integrado" data-prerequisites="mdn311,mdn312,mdn313,mdn314">Taller Clínico Integrado (MDN-324)</div>
+            <div class="course" data-id="mfg114" data-name="Introducción a la Fe" data-prerequisites="">Introducción a la Fe (MFG-114)</div>
+        </section>
+
+        <section class="semester" id="sem-7">
+            <h2>Semestre 7</h2>
+            <div class="course" data-id="mdn411" data-name="Clínicas Integradas II" data-prerequisites="mdn321,mdn322,mdn323,mdn324">Clínicas Integradas II (MDN-411)</div>
+            <div class="course" data-id="mdn412" data-name="Psicología Médica" data-prerequisites="mdn321">Psicología Médica (MDN-412)</div>
+            <div class="course" data-id="mdn413" data-name="Salud Pública y Medicina Preventiva" data-prerequisites="mdn324">Salud Pública y Medicina Preventiva (MDN-413)</div>
+            <div class="course" data-id="mdn414" data-name="Medicina Molecular" data-prerequisites="mdn225">Medicina Molecular (MDN-414)</div>
+            <div class="course" data-id="mfg216" data-name="Ética Cristiana" data-prerequisites="">Ética Cristiana (MFG-216)</div>
+        </section>
+
+        <section class="semester" id="sem-8">
+            <h2>Semestre 8</h2>
+            <div class="course" data-id="mdn421" data-name="Clínicas Integradas III" data-prerequisites="mdn411">Clínicas Integradas III (MDN-421)</div>
+            <div class="course" data-id="mdn422" data-name="Salud Mental y Psiquiatría" data-prerequisites="mdn411,mdn412">Salud Mental y Psiquiatría (MDN-422)</div>
+            <div class="course" data-id="mdn423" data-name="Ética Médica" data-prerequisites="mdn324,mdn411,mdn412">Ética Médica (MDN-423)</div>
+            <div class="course" data-id="cfg" data-name="Certificación I" data-prerequisites="">Certificación I (CFG)</div>
+        </section>
+
+        <section class="semester" id="sem-9">
+            <h2>Semestre 9</h2>
+            <div class="course" data-id="mdn511" data-name="Clínicas Integradas IV" data-prerequisites="mdn421,mdn423">Clínicas Integradas IV (MDN-511)</div>
+            <div class="course" data-id="mdn512" data-name="Obstetricia y Ginecología" data-prerequisites="mdn421,mdn422,mdn423">Obstetricia y Ginecología (MDN-512)</div>
+            <div class="course" data-id="mdn513" data-name="Medicina Legal" data-prerequisites="mdn421,mdn422,mdn423">Medicina Legal (MDN-513)</div>
+            <div class="course" data-id="cfg2" data-name="Certificación II" data-prerequisites="">Certificación II (CFG)</div>
+        </section>
+
+        <section class="semester" id="sem-10">
+            <h2>Semestre 10</h2>
+            <div class="course" data-id="mdn521" data-name="Clínicas Integradas V" data-prerequisites="mdn511">Clínicas Integradas V (MDN-521)</div>
+            <div class="course" data-id="mdn522" data-name="Pediatría y Cirugía Infantil" data-prerequisites="mdn511,mdn512,mdn513">Pediatría y Cirugía Infantil (MDN-522)</div>
+            <div class="course" data-id="mdn523" data-name="Hito Evaluativo Integración Clínica" data-prerequisites="mdn511,mdn512,mdn513">Hito Evaluativo Integración Clínica (MDN-523)</div>
+            <div class="course" data-id="cfg3" data-name="Certificación III" data-prerequisites="">Certificación III (CFG)</div>
+        </section>
+
+        <section class="semester" id="sem-11-12">
+            <h2>Semestre 11 y 12</h2>
+            <div class="course" data-id="mdn611" data-name="Internado de Medicina Interna" data-prerequisites="mdn521,mdn522,mdn523">Internado de Medicina Interna (MDN-611)</div>
+            <div class="course" data-id="mdn612" data-name="Internado de Obstetricia y Ginecología" data-prerequisites="mdn521,mdn522,mdn523">Internado de Obstetricia y Ginecología (MDN-612)</div>
+            <div class="course" data-id="mdn613" data-name="Internado de Pediatría" data-prerequisites="mdn521,mdn522,mdn523">Internado de Pediatría (MDN-613)</div>
+            <div class="course" data-id="mdn614" data-name="Internado de Cirugía" data-prerequisites="mdn521,mdn522,mdn523">Internado de Cirugía (MDN-614)</div>
+        </section>
+
+        <section class="semester" id="sem-13-14">
+            <h2>Semestre 13 y 14</h2>
+            <div class="course" data-id="mdn711" data-name="Internado de Salud Familiar" data-prerequisites="mdn611,mdn612,mdn613,mdn614">Internado de Salud Familiar (MDN-711)</div>
+            <div class="course" data-id="mdn712" data-name="Internado de Especialidades" data-prerequisites="mdn611,mdn612,mdn613,mdn614">Internado de Especialidades (MDN-712)</div>
+            <div class="course" data-id="mdn713" data-name="Internado Optativo" data-prerequisites="mdn611,mdn612,mdn613,mdn614">Internado Optativo (MDN-713)</div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 [Tu Nombre/Apellido]. Datos de la Malla: Universidad Católica del Maule.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
